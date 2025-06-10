@@ -18,12 +18,13 @@ vim.g.maplocalleader = "\\"
 
 -- IDENTS
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "lua", "sh", "dart" }, -- Adicione outras linguagens conforme necessário
+  pattern = { "lua", "sh", "dart", "yml" }, -- Adicione outras linguagens conforme necessário
   callback = function()
     local indent = {
       lua = 2,
       sh = 2,
       dart = 2,
+      yml = 4,
     }
 
     local ft = vim.bo.filetype
