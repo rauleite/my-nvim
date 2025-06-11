@@ -11,6 +11,11 @@ vim.opt.ignorecase = true
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 
+-- aprimorar desempenho na conexão remota
+vim.opt.lazyredraw = true
+vim.opt.timeoutlen = 500
+vim.opt.updatetime = 250
+
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 vim.g.mapleader = " "
@@ -78,3 +83,18 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     end
   end,
 })
+
+-- local lspconfig = require("lspconfig")
+--
+-- -- Configuração global para todos os LSPs
+-- local default_config = {
+--   flags = {
+--     debounce_text_changes = 150, -- Reduz chamadas excessivas ao servidor
+--   },
+--   capabilities = vim.lsp.protocol.make_client_capabilities(),
+-- }
+--
+-- -- Aplicar a configuração global a todos os servidores LSP
+-- for _, server in ipairs(require("lspconfig").util.available_servers()) do
+--   lspconfig[server].setup(default_config)
+-- end
