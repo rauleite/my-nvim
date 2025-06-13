@@ -11,10 +11,10 @@ vim.opt.ignorecase = true
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 
--- aprimorar desempenho na conexão remota
-vim.opt.lazyredraw = true
-vim.opt.timeoutlen = 500
-vim.opt.updatetime = 250
+-- -- aprimorar desempenho na conexão remota
+-- vim.opt.lazyredraw = true
+-- vim.opt.timeoutlen = 500
+-- vim.opt.updatetime = 250
 
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
