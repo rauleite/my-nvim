@@ -1,0 +1,6 @@
+return {
+  "christopher-francisco/tmux-status.nvim",
+  -- lazy = true,
+  lazy = false,
+  opts = {},
+}

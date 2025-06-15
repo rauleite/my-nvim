@@ -30,7 +30,7 @@ return {
       { "<leader>/",       function() Snacks.picker.grep() end,                                    desc = "Grep" },
       { "<leader>:",       function() Snacks.picker.command_history() end,                         desc = "Command History" },
       { "<leader>n",       function() Snacks.picker.notifications() end,                           desc = "Notification History" },
-      { "<leader>e",       function() Snacks.explorer() end,                                       desc = "File Explorer" },
+      { "<leader>E",       function() Snacks.explorer() end,                                       desc = "File Explorer" },
       -- find
       { "<leader>fb",      function() Snacks.picker.buffers() end,                                 desc = "Buffers" },
       { "<leader>fc",      function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
@@ -82,12 +82,6 @@ return {
       { "<leader>ss",      function() Snacks.picker.lsp_symbols() end,                             desc = "LSP Symbols" },
       { "<leader>sS",      function() Snacks.picker.lsp_workspace_symbols() end,                   desc = "LSP Workspace Symbols" },
 
-      -- { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
     }
-    -- config = function()
-    --   vim.api.nvim_create_user_command("Snacks", function()
-    --     require("snacks.picker").files()
-    --   end, {})
-    -- end,
   }
 }
