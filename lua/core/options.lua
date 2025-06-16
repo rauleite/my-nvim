@@ -10,8 +10,11 @@ vim.opt.scrolloff = 8
 vim.opt.ignorecase = true
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
-
-vim.opt.cmdheight = 0
+-- deixa a linha de comando junto com a de status
+-- vim.opt.cmdheight = 0
+vim.opt.cmdheight = 1
+-- omite os modos (como -- INSERT --)
+vim.opt.showmode = false
 
 -- -- aprimorar desempenho na conexão remota
 -- vim.opt.lazyredraw = true
@@ -23,7 +26,7 @@ vim.opt.cmdheight = 0
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
--- IDENTS
+-- INDENTS
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "lua", "sh", "dart", "yml" }, -- Adicione outras linguagens conforme necessário
   callback = function()
