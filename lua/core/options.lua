@@ -11,6 +11,8 @@ vim.opt.ignorecase = true
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 
+vim.opt.cmdheight = 0
+
 -- -- aprimorar desempenho na conexão remota
 -- vim.opt.lazyredraw = true
 -- vim.opt.timeoutlen = 500
