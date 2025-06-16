@@ -15,6 +15,8 @@ vim.opt.cursorline = true
 vim.opt.cmdheight = 1
 -- omite os modos (como -- INSERT --)
 vim.opt.showmode = false
+-- desabilita o <Ctrl-a>, que é builtin do vim e causa um incremento indesejado em números
+vim.keymap.set("n", "<C-a>", "<Nop>")
 
 -- -- aprimorar desempenho na conexão remota
 -- vim.opt.lazyredraw = true
